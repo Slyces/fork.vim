@@ -35,7 +35,8 @@ syn keyword   zephyrKeyword     fun nextgroup=zephyrFuncName skipwhite skipempty
 syn keyword   zephyrKeyword     let
 syn keyword   zephyrKeyword     pub nextgroup=zephyrPubScope skipwhite skipempty
 syn keyword   zephyrKeyword     return
-syn keyword   zephyrKeyword     expose package as
+syn keyword   zephyrKeyword     expose package
+syn keyword   zephyrKeyword     as
 " syn keyword   zephyrSuper       super
 " syn keyword   zephyrKeyword     unsafe where
 syn keyword   zephyrKeyword     use nextgroup=zephyrModPath skipwhite skipempty
