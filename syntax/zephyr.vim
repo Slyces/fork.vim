@@ -35,7 +35,7 @@ syn keyword   zephyrKeyword     fun nextgroup=zephyrFuncName skipwhite skipempty
 syn keyword   zephyrKeyword     let
 syn keyword   zephyrKeyword     pub nextgroup=zephyrPubScope skipwhite skipempty
 syn keyword   zephyrKeyword     return
-syn keyword   zephyrKeyword     expose package
+syn keyword   zephyrKeyword     expose struct standalone runtime interface package 
 syn keyword   zephyrKeyword     as
 " syn keyword   zephyrSuper       super
 " syn keyword   zephyrKeyword     unsafe where
