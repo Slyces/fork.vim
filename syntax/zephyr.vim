@@ -35,8 +35,7 @@ syn keyword   zephyrKeyword     fun nextgroup=zephyrFuncName skipwhite skipempty
 syn keyword   zephyrKeyword     let
 syn keyword   zephyrKeyword     pub nextgroup=zephyrPubScope skipwhite skipempty
 syn keyword   zephyrKeyword     return
-syn keyword   zephyrKeyword     expose struct standalone runtime interface package from import
-syn keyword   zephyrKeyword     as
+syn keyword   zephyrKeyword     expose struct standalone runtime interface module from import as
 " syn keyword   zephyrSuper       super
 " syn keyword   zephyrKeyword     unsafe where
 syn keyword   zephyrKeyword     use nextgroup=zephyrModPath skipwhite skipempty
@@ -70,9 +69,6 @@ syn region    zephyrBoxPlacementBalance start="\[" end="\]" containedin=zephyrBo
 " syn region zephyrMacroRepeat matchgroup=zephyrMacroRepeatDelimiters start="$(" end=")" contains=TOP nextgroup=zephyrMacroRepeatCount
 " syn match zephyrMacroRepeatCount ".\?[*+]" contained
 " syn match zephyrMacroVariable "$\w\+"
-
-" Reserved (but not yet used) keywords {{{2
-syn keyword   zephyrReservedKeyword as priv sizeof typeof yield abstract virtual final override macro
 
 " Built-in types {{{2
 syn keyword   zephyrType        f32 f64 i32 i64 bool
@@ -152,7 +148,7 @@ syn region    zephyrAttribute   start="#!\?\[" end="\]" contains=zephyrString,ze
 syn region    zephyrDerive      start="derive(" end=")" contained contains=zephyrDeriveTrait
 " This list comes from src/libsyntax/ext/deriving/mod.rs
 " Some are deprecated (Encodable, Decodable) or to be removed after a new snapshot (Show).
-syn keyword   zephyrDeriveTrait contained Clone Hash RustcEncodable RustcDecodable Encodable Decodable PartialEq Eq PartialOrd Ord Rand Show Debug Default FromPrimitive Send Sync Copy
+" syn keyword   zephyrDeriveTrait contained Clone Hash RustcEncodable RustcDecodable Encodable Decodable PartialEq Eq PartialOrd Ord Rand Show Debug Default FromPrimitive Send Sync Copy
 
 " Number literals
 " syn match     zephyrDecNumber   display "\<[0-9][0-9_]*\%([iu]\%(size\|8\|16\|32\|64\|128\)\)\="
